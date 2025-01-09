@@ -11,6 +11,10 @@ function Header() {
         navigate('/login');
     };
 
+    const handleCadastreClick = () => {
+        navigate('/cadastre');
+    };
+
     return (
       <header className="header">
         <div className="logo-container">
@@ -23,7 +27,7 @@ function Header() {
           <button className="header-button">Botão 3</button>
         </div>
         <div className="button-container-login">
-          <button className="header-button">Registre-se</button>
+          <button className="header-button" onClick={handleCadastreClick}>Registre-se</button>
           <button className="header-button-login" onClick={handleLoginClick}>Login</button>
         </div>
       </header>

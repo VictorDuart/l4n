@@ -4,18 +4,20 @@ import Header from './Header';
 import Footer from './Footer';
 
 
-class LoginPage extends React.Component {
+class CadastrePage extends React.Component {
 render() {
   return (
     <div className="page">
       <Header />
       <main>
         <div className='card-login'>
-            <p>Novo usuário? <span><a href='/cadastre'>Cadastre-se aqui</a></span></p>
+            <input type="text" placeholder='Primeiro Nome'/>
+            <input type="text" placeholder='Último Nome'/>
+            <input type="text" placeholder='Email'/>
             <input type="text" placeholder="Usuário" />
             <input type="password" placeholder="Senha" />
-            <button>Entrar</button>
-            <p>Esqueceu sua senha? <span><a>Clique aqui</a></span></p>
+            <input type="password" placeholder="Confirmar Senha" />
+            <button>Cadastrar</button>
         </div>
       </main>
       <Footer />
@@ -24,4 +26,4 @@ render() {
 }
 }
 
-export default LoginPage;
+export default CadastrePage;

@@ -96,6 +96,7 @@ body {
 .button-container-login {
 	display: flex;
 	justify-content: flex-end;
+  padding-right: 25px;
 }
 
 .header-button {
@@ -333,4 +334,5 @@ body {
 .card-login a 
 {
   color: #CAFF33;
+  font-weight: 200;
 }
