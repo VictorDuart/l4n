@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './HomePage.js';
+import LoginPage from './LoginPage.js';
 
 class App extends React.Component {
 render() {
@@ -8,7 +9,7 @@ render() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* outras rotas podem ir aqui */}
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,28 +1,16 @@
 import React from 'react';
-import './HomePage.css';
-import logo from './logo.png';
+import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFutbol } from '@fortawesome/free-solid-svg-icons'
+import Header from './Header';
+import Footer from './Footer';
+
 
 class HomePage extends React.Component {
 render() {
   return (
     <div className="homepage">
-      <header className="header">
-        <div className="logo-container">
-          <img src={logo} alt="Logo" className="logo"/>
-          <h1>l4n.<span className="color-green">bet</span></h1>
-        </div>
-        <div className="button-container">
-          <button className="header-button">Botão 1</button>
-          <button className="header-button">Botão 2</button>
-          <button className="header-button">Botão 3</button>
-        </div>
-        <div className="button-container-login">
-          <button className="header-button">Registre-se</button>
-          <button className="header-button-login">Login</button>
-        </div>
-      </header>
+      <Header />
       <main>
       <div className="card-container">
         <div className="card"> 
@@ -127,9 +115,7 @@ render() {
         </div>
       </div>
       </main>
-      <footer>
-        <p>© 2022 Nossa Empresa</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
