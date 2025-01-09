@@ -9,7 +9,7 @@ import Footer from './Footer';
 class HomePage extends React.Component {
 render() {
   return (
-    <div className="homepage">
+    <div className="page">
       <Header />
       <main>
       <div className="card-container">
