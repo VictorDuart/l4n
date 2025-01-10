@@ -7,6 +7,8 @@ import LoginPage from './LoginPage'; // Importe o seu componente LoginPage
 function Header() {
     const navigate = useNavigate();
 
+    const isLogged = true;
+
     const handleLoginClick = () => {
         navigate('/login');
     };
@@ -26,10 +28,17 @@ function Header() {
           <button className="header-button">Botão 2</button>
           <button className="header-button">Botão 3</button>
         </div>
-        <div className="button-container-login">
-          <button className="header-button" onClick={handleCadastreClick}>Registre-se</button>
-          <button className="header-button-login" onClick={handleLoginClick}>Login</button>
-        </div>
+        {isLogged ? (
+            <div className='card-balance'>
+                <span>Saldo: R$ 1000,00</span>
+                <button>Depósito</button>
+            </div>
+        ) : (
+            <div className="button-container-login">
+                <button className="header-button" onClick={handleCadastreClick}>Registre-se</button>
+                <button className="header-button-login" onClick={handleLoginClick}>Login</button>
+            </div>
+        )}
       </header>
     );
     }

@@ -336,3 +336,37 @@ body {
   color: #CAFF33;
   font-weight: 200;
 }
+
+.card-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3F3F3F;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.card-balance span {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.card-balance button {
+  width: 40%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #CAFF33;
+  color: #000;
+  cursor: pointer;
+  font-family: "Outfit", serif;
+}
+
+.card-balance button:hover {
+  background-color: #CAFF33;
+}
