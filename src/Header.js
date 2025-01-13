@@ -17,6 +17,10 @@ function Header() {
         navigate('/cadastre');
     };
 
+    const handleWalletClick = () => {
+        navigate('/wallet');
+    };
+
     return (
       <header className="header">
         <div className="logo-container">
@@ -31,7 +35,7 @@ function Header() {
         {isLogged ? (
             <div className='card-balance'>
                 <span>Saldo: R$ 1000,00</span>
-                <button>Depósito</button>
+                <button onClick={handleWalletClick}>Depósito</button>
             </div>
         ) : (
             <div className="button-container-login">

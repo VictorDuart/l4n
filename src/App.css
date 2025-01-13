@@ -370,3 +370,95 @@ body {
 .card-balance button:hover {
   background-color: #CAFF33;
 }
+
+.card-wallet {
+  background-color: #2F2F2F;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  margin: 50px auto; /* Centraliza horizontalmente e adiciona margem superior/inferior */
+  display: flex;
+  flex-direction: column; /* Alinha os elementos internamente em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center;
+  text-align: left;
+}
+
+.card-wallet .button-container {
+  display: flex;
+  justify-content: space-between; /* Posiciona os itens nas extremidades */
+  width: 30%; /* Ocupar toda a largura do card-wallet é importante aqui */
+  margin-top: 5px;
+  }
+
+
+.card-wallet-balance {
+  background-image: linear-gradient(45deg,
+  #1D1D1D 0%,
+  #272727 33%,
+  #505050 66%, /* Adicionei um cinza médio para suavizar a transição */
+  #CAFF33 100%
+  );
+
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  width: 30%;
+  margin: 10px auto; /* Centraliza horizontalmente e adiciona margem superior/inferior */
+  display: flex;
+  flex-direction: column; /* Alinha os elementos internamente em coluna */
+  align-items: left; /* Centraliza horizontalmente */
+  justify-content: center;
+  text-align: left;
+}
+
+.card-wallet-bets {
+  background-image: linear-gradient(45deg,
+  #1D1D1D 0%,
+  #272727 33%,
+  #505050 66%, /* Adicionei um cinza médio para suavizar a transição */
+  #CAFF33 100%
+  );
+
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  width: 30%;
+  margin: 10px auto; /* Centraliza horizontalmente e adiciona margem superior/inferior */
+  display: flex;
+  flex-direction: column; /* Alinha os elementos internamente em coluna */
+  align-items: left; /* Centraliza horizontalmente */
+  justify-content: center;
+  text-align: left;
+}
+
+.card-wallet h1 {
+  font-family: "Outfit", serif;
+  font-size: 18px;
+}
+
+.card-wallet-button-deposit {
+  width: 40%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #CAFF33;
+  color: #000;
+  cursor: pointer;
+  font-family: "Outfit", serif;
+}
+
+.card-wallet-button-withdraw {
+  width: 40%;
+  padding: 10px;
+  border: 2px solid #CAFF33;
+  border-radius: 10px;
+  background-color: #2F2F2F;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Outfit", serif;
+}
