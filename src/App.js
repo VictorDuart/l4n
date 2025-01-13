@@ -6,6 +6,7 @@ import CadastrePage from "./CadastrePage.js";
 import WalletPage from "./WalletPage.js";
 import WithdrawPage from "./WithdrawPage.js";
 import DepositPage from "./DepositPage.js";
+import BetsPage from "./BetsPage.js";
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Route path="/wallet" element={<WalletPage />} />
           <Route path="/withdraw" element={<WithdrawPage />} />
           <Route path="/deposit" element={<DepositPage />} />
+          <Route path="/bets" element={<BetsPage />} />
         </Routes>
       </BrowserRouter>
     );

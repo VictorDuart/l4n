@@ -1,51 +1,68 @@
-import React from 'react';
-import './App.css';
-import logo from './logo.png';
-import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
-import LoginPage from './LoginPage'; // Importe o seu componente LoginPage
+import React from "react";
+import "./App.css";
+import logo from "./logo.png";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  useNavigate,
+} from "react-router-dom";
+import LoginPage from "./LoginPage"; // Importe o seu componente LoginPage
 
 function Header() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const isLogged = true;
+  const isLogged = true;
 
-    const handleLoginClick = () => {
-        navigate('/login');
-    };
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
 
-    const handleCadastreClick = () => {
-        navigate('/cadastre');
-    };
+  const handleCadastreClick = () => {
+    navigate("/cadastre");
+  };
 
-    const handleWalletClick = () => {
-        navigate('/wallet');
-    };
+  const handleWalletClick = () => {
+    navigate("/wallet");
+  };
 
-    return (
-      <header className="header">
-        <div className="logo-container">
-          <img src={logo} alt="Logo" className="logo"/>
-          <h1>l4n.<span className="color-green">bet</span></h1>
+  const handleBetsClick = () => {
+    navigate("/bets");
+  };
+
+  return (
+    <header className="header">
+      <div className="logo-container">
+        <img src={logo} alt="Logo" className="logo" />
+        <h1>
+          l4n.<span className="color-green">bet</span>
+        </h1>
+      </div>
+      <div className="button-container">
+        <button className="header-button">Botão 1</button>
+        <button className="header-button" onClick={handleBetsClick}>
+          Apostas
+        </button>
+        <button className="header-button">Botão 3</button>
+      </div>
+      {isLogged ? (
+        <div className="card-balance">
+          <span>Saldo: R$ 1000,00</span>
+          <button onClick={handleWalletClick}>Depósito</button>
         </div>
-        <div className="button-container">
-          <button className="header-button">Botão 1</button>
-          <button className="header-button">Botão 2</button>
-          <button className="header-button">Botão 3</button>
+      ) : (
+        <div className="button-container-login">
+          <button className="header-button" onClick={handleCadastreClick}>
+            Registre-se
+          </button>
+          <button className="header-button-login" onClick={handleLoginClick}>
+            Login
+          </button>
         </div>
-        {isLogged ? (
-            <div className='card-balance'>
-                <span>Saldo: R$ 1000,00</span>
-                <button onClick={handleWalletClick}>Depósito</button>
-            </div>
-        ) : (
-            <div className="button-container-login">
-                <button className="header-button" onClick={handleCadastreClick}>Registre-se</button>
-                <button className="header-button-login" onClick={handleLoginClick}>Login</button>
-            </div>
-        )}
-      </header>
-    );
-    }
-    
+      )}
+    </header>
+  );
+}
+
 export default Header;
-    
