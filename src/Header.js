@@ -31,6 +31,10 @@ function Header() {
     navigate("/bets");
   };
 
+  const handlleHomeClick = () => {
+    navigate("/");
+  };
+
   return (
     <header className="header">
       <div className="logo-container">
@@ -40,7 +44,9 @@ function Header() {
         </h1>
       </div>
       <div className="button-container">
-        <button className="header-button">Botão 1</button>
+        <button className="header-button" onClick={handlleHomeClick}>
+          Início
+        </button>
         <button className="header-button" onClick={handleBetsClick}>
           Apostas
         </button>

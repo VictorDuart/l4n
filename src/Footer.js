@@ -15,7 +15,7 @@ function Footer() {
         </button>
       </div>
       <div className="footer-center">
-        <p>L4n All Rights Reserved</p>
+        <p>Darl4n All Rights Reserved</p>
       </div>
       <div className="footer-right">
         <p>Privacy Policy | Terms of Service</p>
