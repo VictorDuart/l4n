@@ -90,7 +90,48 @@ function BetsPage() {
               </div>
             )}
             {activeTab === "resolved" && (
-              <div container-bets>Aqui estão as apostas resolvidas...</div>
+              <div className="container-bets">
+                <div className="bet">
+                  <div className="bet-header">
+                    <h3>Simples R$1.000,00</h3>
+                    <p>Odd: 1.48</p>
+                  </div>
+                  <div className="bet-header">
+                    <h3>Time 1 - Time 2</h3>
+                    <span className="icon icon-won">✔</span>
+                  </div>
+                  <hr className="divisor" />
+                  <div className="bet-header">
+                    <h3>Time 1 ganha</h3>
+                    <p>Odd: 1.38</p>
+                  </div>
+                  <hr className="divisor" />
+                  <div className="bet-header">
+                    <h3>Total</h3>
+                    <p>R$ 1.480,00</p>
+                  </div>
+                </div>
+                <div className="bet">
+                  <div className="bet-header">
+                    <h3>Simples R$50,00</h3>
+                    <p>Odd: 3.1</p>
+                  </div>
+                  <div className="bet-header">
+                    <h3>Time 1 - Time 2</h3>
+                    <span className="icon icon-lost">✘</span>
+                  </div>
+                  <hr className="divisor" />
+                  <div className="bet-header">
+                    <h3>Time 2 ganhar</h3>
+                    <p>Odd: 3.1</p>
+                  </div>
+                  <hr className="divisor" />
+                  <div className="bet-header">
+                    <h3>Total</h3>
+                    <p>R$ 155,00</p>
+                  </div>
+                </div>
+              </div>
             )}
           </div>
         </div>

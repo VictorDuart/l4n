@@ -605,3 +605,22 @@ body {
   border: 1px solid #caff33;
   margin: 10px 0;
 }
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  color: white;
+}
+
+.icon-won {
+  background-color: #28a745; /* Cor verde */
+}
+
+.icon-lost {
+  background-color: #dc3545; /* Cor vermelha */
+}
