@@ -1,12 +1,27 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 function Footer() {
-    return (
-      <footer>
-        <p>© 2022 Nossa Empresa</p>
-      </footer>
-    );
+  return (
+    <footer className="footer">
+      <div className="footer-left">
+        <button className="footer-button">
+          <FaFacebookF />
+        </button>
+        <button className="footer-button">
+          <FaInstagram />
+        </button>
+      </div>
+      <div className="footer-center">
+        <p>L4n All Rights Reserved</p>
+      </div>
+      <div className="footer-right">
+        <p>Privacy Policy | Terms of Service</p>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
