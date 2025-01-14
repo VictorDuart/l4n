@@ -27,10 +27,70 @@ function BetsPage() {
           </div>
           <div className="tab-content">
             {activeTab === "open" && (
-              <div>Aqui estão as apostas abertas...</div>
+              <div className="container-bets">
+                <div className="bet">
+                  <div className="bet-header">
+                    <h3>Simples R$190,50</h3>
+                    <p>Odd: 12.48</p>
+                  </div>
+                  <p>Time 1 - Time 2</p>
+                  <hr className="divisor" />
+                  <div className="bet-header">
+                    <h3>Empate</h3>
+                    <p>Odd: 3.2</p>
+                  </div>
+                  <div className="bet-header">
+                    <h3>Time 1 ter jogador expulso</h3>
+                    <p>Odd: 3.9</p>
+                  </div>
+                  <hr className="divisor" />
+                  <div className="bet-header">
+                    <h3>Total</h3>
+                    <p>R$ 2.377,44</p>
+                  </div>
+                </div>
+                <div className="bet">
+                  <div className="bet-header">
+                    <h3>Simples R$231,50</h3>
+                    <p>Odd: 3.1</p>
+                  </div>
+                  <p>Time 1 - Time 2</p>
+                  <hr className="divisor" />
+                  <div className="bet-header">
+                    <h3>Time 2 ganhar</h3>
+                    <p>Odd: 3.1</p>
+                  </div>
+                  <hr className="divisor" />
+                  <div className="bet-header">
+                    <h3>Total</h3>
+                    <p>R$ 717,65</p>
+                  </div>
+                </div>
+                <div className="bet">
+                  <div className="bet-header">
+                    <h3>Simples R$10,50</h3>
+                    <p>Odd: 2.28</p>
+                  </div>
+                  <p>Time 1 - Time 2</p>
+                  <hr className="divisor" />
+                  <div className="bet-header">
+                    <h3>Time 1 ganhar</h3>
+                    <p>Odd: 1.2</p>
+                  </div>
+                  <div className="bet-header">
+                    <h3>Time 2 receber mais de 1 cartão amarelo</h3>
+                    <p>Odd: 1.9</p>
+                  </div>
+                  <hr className="divisor" />
+                  <div className="bet-header">
+                    <h3>Total</h3>
+                    <p>R$ 23,94</p>
+                  </div>
+                </div>
+              </div>
             )}
             {activeTab === "resolved" && (
-              <div>Aqui estão as apostas resolvidas...</div>
+              <div container-bets>Aqui estão as apostas resolvidas...</div>
             )}
           </div>
         </div>
