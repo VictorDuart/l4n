@@ -187,6 +187,12 @@ body {
   animation: moveBackground1 10s linear infinite,
     moveBackground2 15s linear infinite, moveBackground3 20s linear infinite;
   margin-bottom: 20px;
+  cursor: pointer; /* Adiciona o cursor de ponteiro */
+  transition: transform 0.2s; /* Adiciona uma transição suave */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
 }
 
 .inner-card-container {
@@ -307,6 +313,12 @@ body {
   background-size: 20px 20px;
   animation: moveBackground1 10s linear infinite,
     moveBackground2 15s linear infinite, moveBackground3 20s linear infinite;
+  cursor: pointer; /* Adiciona o cursor de ponteiro */
+  transition: transform 0.2s; /* Adiciona uma transição suave */
+}
+
+.game:hover {
+  transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
 }
 
 .card-login {

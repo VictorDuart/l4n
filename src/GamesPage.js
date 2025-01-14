@@ -2,8 +2,10 @@ import React from "react";
 import "./App.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 function GamesPage() {
+  const navigate = useNavigate();
   const games = [
     {
       id: 1,
@@ -36,13 +38,21 @@ function GamesPage() {
     // Adicione mais jogos conforme necessário
   ];
 
+  const handleCardClick = (gameId) => {
+    navigate(`/game/${gameId}`);
+  };
+
   return (
     <div className="page">
       <Header />
       <main>
         <div className="card-games">
           {games.map((game) => (
-            <div key={game.id} className="card">
+            <div
+              key={game.id}
+              className="card"
+              onClick={() => handleCardClick(game.id)}
+            >
               <div className="game-info">
                 <h3>
                   {game.team1} vs {game.team2}
