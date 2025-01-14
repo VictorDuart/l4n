@@ -92,6 +92,7 @@ body {
 .button-container {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .button-container-login {
@@ -162,6 +163,7 @@ body {
 
 .card-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px 0;
 }
@@ -172,7 +174,6 @@ body {
   width: calc((100% / 3) - 40px);
   height: 180px;
   padding: 10px 5px 0 5px;
-  /* Aumenta o padding-top e diminui o padding-bottom */
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   background-image: radial-gradient(
@@ -185,6 +186,7 @@ body {
   background-size: 20px 20px;
   animation: moveBackground1 10s linear infinite,
     moveBackground2 15s linear infinite, moveBackground3 20s linear infinite;
+  margin-bottom: 20px;
 }
 
 .inner-card-container {
@@ -688,4 +690,23 @@ body {
 .footer-button .fa-instagram,
 .footer-button .fa-facebook {
   font-size: 16px;
+}
+
+.game-info {
+  padding-top: 5%;
+  text-align: left;
+  font-size: 16px;
+}
+
+.card-games {
+  background-color: #1f1f1f;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior/inferior */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

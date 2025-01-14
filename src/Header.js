@@ -31,6 +31,10 @@ function Header() {
     navigate("/bets");
   };
 
+  const handleGamesClick = () => {
+    navigate("/games");
+  };
+
   const handlleHomeClick = () => {
     navigate("/");
   };
@@ -50,7 +54,9 @@ function Header() {
         <button className="header-button" onClick={handleBetsClick}>
           Apostas
         </button>
-        <button className="header-button">Botão 3</button>
+        <button className="header-button" onClick={handleGamesClick}>
+          Jogos
+        </button>
       </div>
       {isLogged ? (
         <div className="card-balance">
