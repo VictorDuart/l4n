@@ -102,7 +102,7 @@ function BetsPage() {
                   </div>
                   <hr className="divisor" />
                   <div className="bet-header">
-                    <h3>Time 1 ganha</h3>
+                    <h3>Time 1 ganhar</h3>
                     <p>Odd: 1.38</p>
                   </div>
                   <hr className="divisor" />
