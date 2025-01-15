@@ -722,3 +722,76 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+/* ...existing code... */
+
+.card-bets {
+  background-color: #2f2f2f;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior/inferior */
+  text-align: center;
+}
+
+.bets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.bet-option {
+  background-color: #4f4f4f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.bet-option:hover {
+  background-color: #6f6f6f;
+}
+
+.bet-option.selected {
+  background-color: #caff33;
+  color: #000;
+}
+
+.bet-amount-container {
+  margin-top: 20px;
+}
+
+.bet-amount-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bet-amount-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.confirm-bet-button {
+  background-color: #caff33;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.confirm-bet-button:hover {
+  background-color: #b8e600;
+}
+
+/* ...existing code... */
