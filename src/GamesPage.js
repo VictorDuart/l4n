@@ -39,7 +39,7 @@ function GamesPage() {
   ];
 
   const handleCardClick = (gameId) => {
-    navigate(`/game/${gameId}`);
+    navigate(`/cadastre-bet/${gameId}`);
   };
 
   return (

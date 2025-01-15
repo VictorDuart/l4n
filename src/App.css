@@ -748,7 +748,7 @@ body {
   color: #fff;
   padding: 10px;
   border-radius: 5px;
-  width: calc(50% - 10px);
+  width: calc((100% / 3) - 10px); /* Ajustar para três cards por linha */
   margin-bottom: 10px;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -759,7 +759,7 @@ body {
 }
 
 .bet-option.selected {
-  background-color: #caff33;
+  background-color: #caff33; /* Cor verde */
   color: #000;
 }
 

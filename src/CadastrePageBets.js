@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 
 function CadastrePageBets() {
   const { gameId } = useParams();
-  const [selectedBet, setSelectedBet] = useState(null);
+  const [selectedBets, setSelectedBets] = useState([]);
   const [betAmount, setBetAmount] = useState("");
 
   const bets = [
@@ -19,7 +19,11 @@ function CadastrePageBets() {
   ];
 
   const handleBetClick = (bet) => {
-    setSelectedBet(bet);
+    setSelectedBets((prevSelectedBets) =>
+      prevSelectedBets.includes(bet.id)
+        ? prevSelectedBets.filter((b) => b !== bet.id)
+        : [...prevSelectedBets, bet.id]
+    );
   };
 
   const handleBetAmountChange = (event) => {
@@ -27,13 +31,15 @@ function CadastrePageBets() {
   };
 
   const handleConfirmBet = () => {
-    if (selectedBet && betAmount) {
+    if (selectedBets.length > 0 && betAmount) {
       alert(
-        `Aposta confirmada: ${selectedBet.description} - Valor: R$ ${betAmount}`
+        `Apostas confirmadas: ${selectedBets
+          .map((bet) => bet.description)
+          .join(", ")} - Valor: R$ ${betAmount}`
       );
       // Aqui você pode adicionar a lógica para salvar a aposta no backend
     } else {
-      alert("Por favor, selecione uma aposta e insira um valor.");
+      alert("Por favor, selecione uma ou mais apostas e insira um valor.");
     }
   };
 
@@ -49,7 +55,7 @@ function CadastrePageBets() {
               <div
                 key={bet.id}
                 className={`bet-option ${
-                  selectedBet?.id === bet.id ? "selected" : ""
+                  selectedBets.includes(bet.id) ? "selected" : ""
                 }`}
                 onClick={() => handleBetClick(bet)}
               >
