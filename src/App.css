@@ -788,10 +788,9 @@ body {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
+  font-family: "Outfit", serif;
 }
 
 .confirm-bet-button:hover {
   background-color: #b8e600;
 }
-
-/* ...existing code... */

@@ -39,6 +39,10 @@ function Header() {
     navigate("/");
   };
 
+  const handleDepositClick = () => {
+    navigate("/deposit");
+  };
+
   return (
     <header className="header">
       <div className="logo-container">
@@ -57,11 +61,14 @@ function Header() {
         <button className="header-button" onClick={handleGamesClick}>
           Jogos
         </button>
+        <button className="header-button" onClick={handleWalletClick}>
+          Carteira
+        </button>
       </div>
       {isLogged ? (
         <div className="card-balance">
           <span>Saldo: R$ 1000,00</span>
-          <button onClick={handleWalletClick}>Depósito</button>
+          <button onClick={handleDepositClick}>Depósito</button>
         </div>
       ) : (
         <div className="button-container-login">
